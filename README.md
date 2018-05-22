@@ -1,30 +1,30 @@
 # logview
-### Django project to view log files on web page
+#### Django project to view log files on web page
 
 ## install django live log
-### $ sudo pip install django_live_log
+#### $ sudo pip install django_live_log
 
 ## Create folder
-### $ mkdir log_project
+#### $ mkdir log_project
 
 ## Go to folder
-### $ cd log_project/
+#### $ cd log_project/
 
 ## Start Django Application
-### $ django-admin startproject logviewer
+#### $ django-admin startproject logviewer
  this will create manage.py db.sqllite3 and a folder as logviewer and the folder will have __init__.py, settings.py, urls.py and uwsgi.py
 
 ## Add APP 
-### add 'django_live_log' to INSTALLED_APPS, as an app to the project by editing settings.py
+#### add 'django_live_log' to INSTALLED_APPS, as an app to the project by editing settings.py
 
 ## Add URL
-### add url(r'^dll/', include('django_live_log.urls')), to urls.py and import include from django.conf.urls
+#### add url(r'^dll/', include('django_live_log.urls')), to urls.py and import include from django.conf.urls
 
 ## Add LOG
-### add a line DLL_FILE = '/var/log/myfile.log' to settings.py for absolute path of log file
+#### add a line DLL_FILE = '/var/log/myfile.log' to settings.py for absolute path of log file
 
 ## Run Django
-### $ python manage.py runserver 
+#### $ python manage.py runserver 
  this will run the django web application with default domain localhost and default django port 8000
 
 
